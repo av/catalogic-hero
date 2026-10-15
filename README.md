@@ -17,4 +17,4 @@ Public repositories can use GitHub Pages on GitHub Free. Standard GitHub-hosted 
 
 The manually triggered verification workflow opens the actual public URLs in fresh, logged-out Chromium contexts on a standard GitHub-hosted Ubuntu runner. It verifies public server addresses, absence of tailnet interfaces/routes, all images and fonts, desktop/mobile rendering and comparison controls. Only requests to the public Pages host are allowed. Screenshots and the request/network report are saved to `proof/`.
 
-The workflow is not scheduled. Hosting continues independently of future verification runs or artifact retention. Stable proof files can be kept in the repository.
+The workflow is not scheduled. Hosting continues independently of future verification runs or artifact retention. Permanent screenshot and network evidence is committed in [proof/](proof/README.md).

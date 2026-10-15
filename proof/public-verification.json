@@ -1,0 +1,417 @@
+{
+  "started_utc": "2026-10-15T21:43:26.849759+00:00",
+  "network": {
+    "observed": {
+      "runner_environment": "github-hosted",
+      "runner_os": "Linux",
+      "interfaces": [
+        "lo",
+        "eth0",
+        "docker0",
+        "enP31132s1"
+      ],
+      "tailnet_interfaces": [],
+      "tailnet_routes": [],
+      "public_dns_addresses": [
+        "185.199.108.153",
+        "185.199.109.153",
+        "185.199.110.153",
+        "185.199.111.153",
+        "2606:50c0:8000::153",
+        "2606:50c0:8001::153",
+        "2606:50c0:8002::153",
+        "2606:50c0:8003::153"
+      ],
+      "workflow_url": "https://github.com/av/catalogic-hero/actions/runs/38811955797"
+    },
+    "inferred": "This standard GitHub-hosted runner is outside Ivan's tailnet: no Tailscale setup, interface, route or browser credentials are present."
+  },
+  "cases": [
+    {
+      "page": "hero",
+      "device": "desktop",
+      "url": "https://av.github.io/catalogic-hero/",
+      "status": 200,
+      "observed": {
+        "fresh_logged_out_context": true,
+        "cookies_before_and_after": 0,
+        "server": {
+          "ipAddress": "185.199.109.153",
+          "port": 443
+        },
+        "dimensions": {
+          "viewportWidth": 1440,
+          "viewportHeight": 900,
+          "scrollWidth": 1440,
+          "scrollHeight": 900
+        },
+        "fonts": [
+          {
+            "family": "Instrument Sans",
+            "status": "loaded"
+          },
+          {
+            "family": "Instrument Sans",
+            "status": "loaded"
+          },
+          {
+            "family": "IBM Plex Mono",
+            "status": "loaded"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Catalogic Software",
+            "width": 300,
+            "height": 75,
+            "inline": true
+          }
+        ],
+        "all_comparison_image_modes": [],
+        "requests": [
+          {
+            "url": "https://av.github.io/catalogic-hero/",
+            "method": "GET",
+            "authorization_present": false,
+            "cookie_present": false
+          }
+        ],
+        "private_host_requests": [],
+        "javascript_errors": [],
+        "failed_requests": [],
+        "screenshot": "hero-desktop.png",
+        "original_file_hash_matches": true
+      }
+    },
+    {
+      "page": "hero",
+      "device": "mobile",
+      "url": "https://av.github.io/catalogic-hero/",
+      "status": 200,
+      "observed": {
+        "fresh_logged_out_context": true,
+        "cookies_before_and_after": 0,
+        "server": {
+          "ipAddress": "185.199.108.153",
+          "port": 443
+        },
+        "dimensions": {
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 844
+        },
+        "fonts": [
+          {
+            "family": "Instrument Sans",
+            "status": "loaded"
+          },
+          {
+            "family": "Instrument Sans",
+            "status": "loaded"
+          },
+          {
+            "family": "IBM Plex Mono",
+            "status": "loaded"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Catalogic Software",
+            "width": 300,
+            "height": 75,
+            "inline": true
+          }
+        ],
+        "all_comparison_image_modes": [],
+        "requests": [
+          {
+            "url": "https://av.github.io/catalogic-hero/",
+            "method": "GET",
+            "authorization_present": false,
+            "cookie_present": false
+          }
+        ],
+        "private_host_requests": [],
+        "javascript_errors": [],
+        "failed_requests": [],
+        "screenshot": "hero-mobile.png",
+        "original_file_hash_matches": true
+      }
+    },
+    {
+      "page": "comparison",
+      "device": "desktop",
+      "url": "https://av.github.io/catalogic-hero/catalogic-hero-compare.html",
+      "status": 200,
+      "observed": {
+        "fresh_logged_out_context": true,
+        "cookies_before_and_after": 0,
+        "server": {
+          "ipAddress": "185.199.110.153",
+          "port": 443
+        },
+        "dimensions": {
+          "viewportWidth": 1440,
+          "viewportHeight": 900,
+          "scrollWidth": 1440,
+          "scrollHeight": 3282
+        },
+        "fonts": [
+          {
+            "family": "Instrument Sans",
+            "status": "loaded"
+          },
+          {
+            "family": "Instrument Sans",
+            "status": "loaded"
+          },
+          {
+            "family": "IBM Plex Mono",
+            "status": "loaded"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Original Catalogic homepage above the fold, 1440 by 900 pixels",
+            "width": 1440,
+            "height": 900,
+            "inline": true
+          },
+          {
+            "alt": "Redesigned Catalogic hero, 1440 by 900 pixels",
+            "width": 1440,
+            "height": 900,
+            "inline": true
+          }
+        ],
+        "all_comparison_image_modes": [
+          {
+            "device": "desktop",
+            "first_visit": false,
+            "images": [
+              {
+                "alt": "Original Catalogic homepage above the fold, 1440 by 900 pixels",
+                "width": 1440,
+                "height": 900,
+                "inline": true
+              },
+              {
+                "alt": "Redesigned Catalogic hero, 1440 by 900 pixels",
+                "width": 1440,
+                "height": 900,
+                "inline": true
+              }
+            ]
+          },
+          {
+            "device": "desktop",
+            "first_visit": true,
+            "images": [
+              {
+                "alt": "Original Catalogic homepage above the fold, 1440 by 900 pixels, with first-visit cookie banner",
+                "width": 1440,
+                "height": 900,
+                "inline": true
+              },
+              {
+                "alt": "Redesigned Catalogic hero, 1440 by 900 pixels",
+                "width": 1440,
+                "height": 900,
+                "inline": true
+              }
+            ]
+          },
+          {
+            "device": "mobile",
+            "first_visit": false,
+            "images": [
+              {
+                "alt": "Original Catalogic homepage above the fold, 390 by 844 pixels",
+                "width": 390,
+                "height": 844,
+                "inline": true
+              },
+              {
+                "alt": "Redesigned Catalogic hero, 390 by 844 pixels",
+                "width": 390,
+                "height": 844,
+                "inline": true
+              }
+            ]
+          },
+          {
+            "device": "mobile",
+            "first_visit": true,
+            "images": [
+              {
+                "alt": "Original Catalogic homepage above the fold, 390 by 844 pixels, with first-visit cookie banner",
+                "width": 390,
+                "height": 844,
+                "inline": true
+              },
+              {
+                "alt": "Redesigned Catalogic hero, 390 by 844 pixels",
+                "width": 390,
+                "height": 844,
+                "inline": true
+              }
+            ]
+          }
+        ],
+        "requests": [
+          {
+            "url": "https://av.github.io/catalogic-hero/catalogic-hero-compare.html",
+            "method": "GET",
+            "authorization_present": false,
+            "cookie_present": false
+          }
+        ],
+        "private_host_requests": [],
+        "javascript_errors": [],
+        "failed_requests": [],
+        "screenshot": "comparison-desktop.png",
+        "original_file_hash_matches": true
+      }
+    },
+    {
+      "page": "comparison",
+      "device": "mobile",
+      "url": "https://av.github.io/catalogic-hero/catalogic-hero-compare.html",
+      "status": 200,
+      "observed": {
+        "fresh_logged_out_context": true,
+        "cookies_before_and_after": 0,
+        "server": {
+          "ipAddress": "185.199.108.153",
+          "port": 443
+        },
+        "dimensions": {
+          "viewportWidth": 390,
+          "viewportHeight": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 6342
+        },
+        "fonts": [
+          {
+            "family": "Instrument Sans",
+            "status": "loaded"
+          },
+          {
+            "family": "Instrument Sans",
+            "status": "loaded"
+          },
+          {
+            "family": "IBM Plex Mono",
+            "status": "loaded"
+          }
+        ],
+        "images": [
+          {
+            "alt": "Original Catalogic homepage above the fold, 390 by 844 pixels",
+            "width": 390,
+            "height": 844,
+            "inline": true
+          },
+          {
+            "alt": "Redesigned Catalogic hero, 390 by 844 pixels",
+            "width": 390,
+            "height": 844,
+            "inline": true
+          }
+        ],
+        "all_comparison_image_modes": [
+          {
+            "device": "desktop",
+            "first_visit": false,
+            "images": [
+              {
+                "alt": "Original Catalogic homepage above the fold, 1440 by 900 pixels",
+                "width": 1440,
+                "height": 900,
+                "inline": true
+              },
+              {
+                "alt": "Redesigned Catalogic hero, 1440 by 900 pixels",
+                "width": 1440,
+                "height": 900,
+                "inline": true
+              }
+            ]
+          },
+          {
+            "device": "desktop",
+            "first_visit": true,
+            "images": [
+              {
+                "alt": "Original Catalogic homepage above the fold, 1440 by 900 pixels, with first-visit cookie banner",
+                "width": 1440,
+                "height": 900,
+                "inline": true
+              },
+              {
+                "alt": "Redesigned Catalogic hero, 1440 by 900 pixels",
+                "width": 1440,
+                "height": 900,
+                "inline": true
+              }
+            ]
+          },
+          {
+            "device": "mobile",
+            "first_visit": false,
+            "images": [
+              {
+                "alt": "Original Catalogic homepage above the fold, 390 by 844 pixels",
+                "width": 390,
+                "height": 844,
+                "inline": true
+              },
+              {
+                "alt": "Redesigned Catalogic hero, 390 by 844 pixels",
+                "width": 390,
+                "height": 844,
+                "inline": true
+              }
+            ]
+          },
+          {
+            "device": "mobile",
+            "first_visit": true,
+            "images": [
+              {
+                "alt": "Original Catalogic homepage above the fold, 390 by 844 pixels, with first-visit cookie banner",
+                "width": 390,
+                "height": 844,
+                "inline": true
+              },
+              {
+                "alt": "Redesigned Catalogic hero, 390 by 844 pixels",
+                "width": 390,
+                "height": 844,
+                "inline": true
+              }
+            ]
+          }
+        ],
+        "requests": [
+          {
+            "url": "https://av.github.io/catalogic-hero/catalogic-hero-compare.html",
+            "method": "GET",
+            "authorization_present": false,
+            "cookie_present": false
+          }
+        ],
+        "private_host_requests": [],
+        "javascript_errors": [],
+        "failed_requests": [],
+        "screenshot": "comparison-mobile.png",
+        "original_file_hash_matches": true
+      }
+    }
+  ],
+  "browser": "145.0.7632.6",
+  "comparison_link_observed": "https://av.github.io/catalogic-hero/catalogic-hero.html",
+  "completed_utc": "2026-10-15T21:43:38.787410+00:00",
+  "result": "PASS"
+}
