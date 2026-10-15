@@ -1,0 +1,23 @@
+{
+  "pages": [
+    {
+      "file": "catalogic-hero.html",
+      "bytes": 74291,
+      "sha256": "37626c74cbb7a80fa78d4b0838334c5ddd4a8ed01efaf34a78a64e44c74e8737",
+      "unchanged": true,
+      "private_host_markers": 0,
+      "credential_markers": 0,
+      "external_asset_references": 0
+    },
+    {
+      "file": "catalogic-hero-compare.html",
+      "bytes": 2542133,
+      "sha256": "d87f75466d8a2cb0bc8a0c675865d359a1459390aaf4d33424a35fec78851938",
+      "unchanged": true,
+      "private_host_markers": 0,
+      "credential_markers": 0,
+      "external_asset_references": 0
+    }
+  ],
+  "index_is_unchanged_hero_alias": true
+}
