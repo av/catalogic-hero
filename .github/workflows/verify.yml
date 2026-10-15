@@ -1,0 +1,44 @@
+name: Verify public static pages
+on:
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  source:
+    name: Original files and self-contained assets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - run: python scripts/audit_source.py
+  public-browser:
+    name: Logged-out browser outside the tailnet
+    if: github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: '3.12'
+      - name: Install verification browser
+        run: |
+          python -m pip install playwright==1.58.0
+          python -m playwright install --with-deps chromium
+      - name: Verify published pages and capture proof
+        run: python scripts/verify_public.py
+      - name: Keep proof
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: public-browser-proof
+          path: proof/
+          if-no-files-found: error
+          retention-days: 30
